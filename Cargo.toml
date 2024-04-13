@@ -1,0 +1,27 @@
+[package]
+name = "lyrication-mini"
+version = "0.0.1"
+edition = "2021"
+
+[profile.dev]
+debug-assertions = true
+
+[dependencies]
+block2 = "0.4.0"
+core-foundation = "0.9.4"
+dispatch2 = "0.1.0"
+objc2 = "0.5.0"
+serde = { version = "1.0.197", features = ["derive"] }
+crossbeam = "0.8.4"
+
+[dependencies.cacao]
+version = "0.3.2"
+features = ["appkit"]
+
+[dependencies.icrate]
+version = "0.1.0"
+features = ["Foundation", "AppKit", "AppKit_NSWindow", "Foundation_NSDate", "Foundation_NSNumber", "AppKit_NSImage", "AppKit_NSTextField"]
+
+[dependencies.ureq]
+version = "2.9.6"
+features = ["tls", "json", "charset", "native-certs", "gzip", "brotli"]
